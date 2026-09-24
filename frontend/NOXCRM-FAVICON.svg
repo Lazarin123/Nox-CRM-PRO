@@ -1,0 +1,53 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"></stop>
+      <stop offset="100%" stop-color="#121A33"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5EE7FF"></stop>
+      <stop offset="100%" stop-color="#2563EB"></stop>
+    </linearGradient>
+
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7DD3FC"></stop>
+      <stop offset="100%" stop-color="#3B82F6"></stop>
+    </linearGradient>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#bg)"></rect>
+
+  <g transform="translate(256 212)">
+    <path d="M0 -108 L94 -54 L94 54 L0 108 L-94 54 L-94 -54 Z" fill="none" stroke="url(#stroke)" stroke-width="8" stroke-linejoin="round"></path>
+
+    <path d="M0 -82 L70 -41 L70 41 L0 82 L-70 41 L-70 -41 Z" fill="#2563EB14" stroke="#7DD3FC55" stroke-width="2" stroke-linejoin="round"></path>
+
+    <g filter="url(#glow)">
+      <path d="M-46 42 V-42 L46 42 V-42" fill="none" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+
+    <circle cx="-46" cy="-42" r="5" fill="#7DD3FC"></circle>
+    <circle cx="46" cy="42" r="5" fill="#60A5FA"></circle>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="256" y="382" font-size="54" font-weight="700" letter-spacing="8" fill="#F8FAFC">
+      NOX
+    </text>
+
+    <line x1="170" y1="394" x2="342" y2="394" stroke="#1D4ED8" stroke-opacity="0.6"></line>
+
+    <text x="256" y="420" font-size="22" font-weight="600" letter-spacing="4" fill="#7DD3FC">
+      CRM
+    </text>
+  </g>
+</svg>
